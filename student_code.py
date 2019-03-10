@@ -61,7 +61,7 @@ def buildFeatureStatement(tree):
     # the names and will build any FOPC associated with prepositional objects it finds and assert it.
 
 ##### Your code to resolveObjectFOPC here -- this takes the root, the primary (suibject) and your names
-    core.findAndAttachPrepObjectsFOPC(verb_sub, root, names)
+    core.findAndAttachPrepObjectsFOPC(root, verb_sub, names)
 
     # Next we pull out any features associated with the object and attach them to the object. We can use
     # core.findAndAssertFeaturesFOPC to do this.  Like core.findAndAttachPrepObjectsFOPC, it takes the ROOT and
